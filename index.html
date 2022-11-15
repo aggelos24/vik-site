@@ -8,67 +8,99 @@
 		<link href="assets/css/styles.css" rel="stylesheet">
 	</head>
 	<body>
-		<div id="home"></div>
-		<div id="nav" role="navigation" class="d-flex flex-center sticky bb-2-gray bg-white p-10px">
-			<div class="my-10px">
-				<a href="#home" class="font-weight-bold text-gray bb-1-gray-hover cursor-pointer"><h2>Αρχική</h2></a>
+		<div class="sidebar d-flex flex-column flex-space-between br-1-gray p-20px">
+			<div></div>
+
+			<div id="nav" role="navigation" class="d-flex flex-column">
+				<div class="">
+					<a href="#home" class="font-weight-bold text-gray bb-1-gray-hover cursor-pointer"><h2>Αρχική</h2></a>
+				</div>
+				<div class="mt-10px">
+					<a href="#bio" class="font-weight-bold text-gray bb-1-gray-hover cursor-pointer"><h2>Βιογραφικό</h2></a>
+				</div>
+				<div class="mt-10px">
+					<a href="#services" class="font-weight-bold text-gray bb-1-gray-hover cursor-pointer"><h2>Υπηρεσίες</h2></a>
+				</div>
 			</div>
-			<div class="my-10px">
-				<a href="#bio" class="font-weight-bold text-gray bb-1-gray-hover cursor-pointer"><h2>Βιογραφικό</h2></a>
-			</div>
-			<div class="my-10px">
-				<a href="#services" class="font-weight-bold text-gray bb-1-gray-hover cursor-pointer"><h2>Υπηρεσίες</h2></a>
-			</div>
+
+			<a class="cursor-pointer" href="assets/ΑΦΙΣΑ.pdf" target="_blank"><img src="assets/espa.jpg" class="w-100 object-fit-contain" alt="ΕΣΠΑ 2014 - 2020" /> </a>
 		</div>
-		<div id="content" role="main">
-			<div class="b-image d-flex flex-center flex-column align-items-center text-white">
-				<div style="background-color: rgba(0,0,0,0.4); padding: 4px"><h1 class="fs-25px">Βίκυ Βασιλοπούλου</h1></div>
-				<div class="mt-10px" style="background-color: rgba(0,0,0,0.4); padding: 4px"><h1 class="fs-23px">Πολιτικός Μηχανικός</h1></div>
-			</div>
-		
-			<div id="bio" class="px-100px px-m-20px py-50px bb-2-gray">
-				Ο Ευμένης Β΄ ο Σωτήρ (βασ. 197 π.Χ. - 158 π.Χ.) ήταν ηγεμόνας του ελληνιστικού βασιλείου της Περγάμου στη Μικρά Ασία, 
-				μέλος της Δυναστείας των Ατταλιδών. Ήταν γιος του Αττάλου Α΄ του Σωτήρος και της Απολλωνίδος. Νυμφεύτηκε τη Στρατονίκη, 
-				κόρη του Αριαράθη Δ΄, βασιλιά της Καππαδοκίας και της Αντιοχίδος. Κατά τη διάρκεια της βασιλείας του, ασκώντας έντονα 
-				φιλορωμαϊκή πολιτική κατάφερε να εξελιχθεί σε ελάχιστο χρόνο από βασιλιάς ενός σχετικά ασήμαντου βασιλείου σε ηγεμόνα 
-				μιας ισχυρότατης μοναρχίας. Σύμφωνα με τον ιστορικό Πολύβιο, ο Ευμένης ήταν άνδρας με ασθενή κράση, αλλά με μεγάλη 
-				ενεργητικότητα και δύναμη μυαλού, όπως αποδεικνύεται από τη θητεία του στο θρόνο της Περγάμου. Είναι, επίσης, γνωστός 
-				για το σημαντικό πολιτιστικό του έργο, με επιφανέστερα επιτεύγματά του την ανάδειξη της Περγάμου σε περίλαμπρη πόλη 
-				και την επέκταση της Βιβλιοθήκης της Περγάμου, μιας από τις μεγάλες βιβλιοθήκες του αρχαίου κόσμου, δεύτερη σε σπουδαιότητα 
-				μετά από την αντίστοιχη της Αλεξάνδρειας.
-			</div>
-			<div id="services" class="px-100px px-m-20px py-50px">
-				<div class="d-flex flex-center dot"><h2>Αρχιτεκτονικές Μελέτες</h2></div>
-				<div class="mt-10px">
-					Υποβολή αίτησης επιδόματος θέρμανσης Απαραίτητα στοιχεία: Εκκαθαριστικό (οποιοδήποτε της τελευταίας πενταετίας) 
-					ή Κωδικούς Taxisnet Αριθμό παροχής ρεύματος ακινήτου Αριθμό IBAN (25ψήφιο) τραπεζικού λογαριασμού
+		<div id="content" class="content">
+			<div role="main">
+				<div id="home" class="b-image d-flex flex-center flex-column align-items-center text-white">
+					<div style="background-color: rgba(0,0,0,0.4); padding: 4px"><h1 class="fs-25px">Βίκυ Βασιλοπούλου</h1></div>
+					<div class="mt-10px" style="background-color: rgba(0,0,0,0.4); padding: 4px"><h1 class="fs-23px">Πολιτικός Μηχανικός</h1></div>
+
+					<a href="#bio"><div class="bg-white text-black fs-18px br-4px p-10px mt-20px">Περισσότερα</div></a>
+				</div>
+			
+				<div id="bio" class="px-100px py-50px bb-2-gray">
+					<div>Βασιλική Βασιλοπούλου πολιτικός μηχανικός</div>
+
+					<ul class="mt-5px">
+						<li>
+							Απόφοιτος της Πολυτεχνικής σχολής του Πανεπιστημίου Πατρών το 2007, με μεταπτυχιακές σπουδές στον 
+							¨Αντισεισμικό σχεδιασμό των κατασκευών¨ το 2009 στο ίδιο Πανεπιστήμιο.
+						</li>
+						<li>Μέλος του Τ.Ε.Ε. από το 2007</li>
+						<li>Ελεγκτής Δόμησης από το 2012 με Α.Μ.624</li>
+						<li>Ενεργειακός επιθεωρητής από το 2013 με Α.Μ. 10025</li>
+					</ul>
+
+					<div class="mt-5px">
+						Το έτος 2010 πραγματοποιεί στην Πάτρα την έναρξη λειτουργίας γραφείου με αντικείμενο μελέτες και επιβλέψεις, 
+						ιδιωτικών κυρίως έργων καθώς και πάσης φύσεως εργασίες που σχετίζονται με «έργα πολιτικού μηχανικού» όπως: 
+						σύνταξη τοπογραφικών διαγραμμάτων, έκδοση αδειών Δόμησης, τεχνικό έλεγχο ακινήτων, πιστοποιητικά ενεργειακής 
+						απόδοσης, άδειες λειτουργίας επιχειρήσεων κ.α. Για την ολοκλήρωση των παραπάνω εργασιών συμμετέχουν, όπου απαιτείται, 
+						αξιόλογοι συνεργάτες μηχανικοί και άλλων ειδικοτήτων.
+					</div>
+
+					<div class="mt-5px">
+						Εργάστηκε σε γραφεία (Εμμανουήλ & Άννας Παπαδάκη στο Ηράκλειο Κρήτης και των αρχιτεκτόνων Άγγελου & Σταύρου Μουζακίτη 
+						στην Πάτρα) με αντικείμενο τις μελέτες κτηριακών έργων, ειδικά στον τομέα που αφορά την οργάνωση του φέροντος οργανισμού, 
+						τον σχεδιασμό του ξυλοτύπου κ.λ.π.
+					</div>
+
+					<div class="mt-5px">
+						Βασική επιδίωξη του γραφείου γενικότερα είναι: α) ο σεβασμός στο περιβάλλον και η σωστή ένταξη κάθε κατασκευής σε αυτό 
+						β) η τήρηση της ανθρώπινης κλίμακας και του μέτρου στον σχεδιασμό και την υλοποίηση κάθε κατασκευής και γ) η αναγνώριση 
+						και η περαιτέρω παρακολούθηση των σύγχρονων αναγκών των χρηστών και η προσπάθεια να επιτυγχάνονται λύσεις με συνδυασμό 
+						την εφικτότητα και την οικονομία.  
+					</div>
 				</div>
 
-				<div class="d-flex flex-center dot mt-20px"><h2>Έκδοση Αδειών Δόμησης</h2></div>
-				<div class="mt-10px">
-					ΑΠΑΡΑΙΤΗΤΑ ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ:  Δικαιολογητικά που προσκομίζονται από όλους τους δικαιούχους: Βεβαίωση του εργοδότη 
-					υπογεγραμμένη και σφραγισμένη από τον εργοδότη, για τους εργαζόμενους που αμείβονται με μηναίο μισθό και όχι
-				</div>
-
-				<div class="d-flex flex-center dot mt-20px"><h2>Ανακαινίσεις Αποκαταστάσεις</h2></div>
-				<div class="mt-10px">
-					ΑΠΑΡΑΙΤΗΤΑ ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ:  Δικαιολογητικά που προσκομίζονται από όλους τους δικαιούχους: Βεβαίωση του εργοδότη 
-					υπογεγραμμένη και σφραγισμένη από τον εργοδότη, για τους εργαζόμενους που αμείβονται με μηναίο μισθό και όχι
-				</div>
-
-				<div class="d-flex flex-center dot mt-20px"><h2>Τακτοποιήσεις Αυθαιρέτων</h2></div>
-				<div class="mt-10px">
-					ΑΠΑΡΑΙΤΗΤΑ ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ:  Δικαιολογητικά που προσκομίζονται από όλους τους δικαιούχους: Βεβαίωση του εργοδότη 
-					υπογεγραμμένη και σφραγισμένη από τον εργοδότη, για τους εργαζόμενους που αμείβονται με μηναίο μισθό και όχι
+				<div id="services" class="px-100px py-50px">
+					<div class="d-flex flex-center dot"><h2>Αρχιτεκτονικές Μελέτες</h2></div>
+					<div class="mt-10px">
+						Υποβολή αίτησης επιδόματος θέρμανσης Απαραίτητα στοιχεία: Εκκαθαριστικό (οποιοδήποτε της τελευταίας πενταετίας) 
+						ή Κωδικούς Taxisnet Αριθμό παροχής ρεύματος ακινήτου Αριθμό IBAN (25ψήφιο) τραπεζικού λογαριασμού
+					</div>
+	
+					<div class="d-flex flex-center dot mt-20px"><h2>Έκδοση Αδειών Δόμησης</h2></div>
+					<div class="mt-10px">
+						ΑΠΑΡΑΙΤΗΤΑ ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ:  Δικαιολογητικά που προσκομίζονται από όλους τους δικαιούχους: Βεβαίωση του εργοδότη 
+						υπογεγραμμένη και σφραγισμένη από τον εργοδότη, για τους εργαζόμενους που αμείβονται με μηναίο μισθό και όχι
+					</div>
+	
+					<div class="d-flex flex-center dot mt-20px"><h2>Ανακαινίσεις Αποκαταστάσεις</h2></div>
+					<div class="mt-10px">
+						ΑΠΑΡΑΙΤΗΤΑ ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ:  Δικαιολογητικά που προσκομίζονται από όλους τους δικαιούχους: Βεβαίωση του εργοδότη 
+						υπογεγραμμένη και σφραγισμένη από τον εργοδότη, για τους εργαζόμενους που αμείβονται με μηναίο μισθό και όχι
+					</div>
+	
+					<div class="d-flex flex-center dot mt-20px"><h2>Τακτοποιήσεις Αυθαιρέτων</h2></div>
+					<div class="mt-10px">
+						ΑΠΑΡΑΙΤΗΤΑ ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ:  Δικαιολογητικά που προσκομίζονται από όλους τους δικαιούχους: Βεβαίωση του εργοδότη 
+						υπογεγραμμένη και σφραγισμένη από τον εργοδότη, για τους εργαζόμενους που αμείβονται με μηναίο μισθό και όχι
+					</div>
 				</div>
 			</div>
-		</div>
-		<div id="footer" role="contentinfo">
-			<div class="px-100px px-m-20px py-50px bg-gray text-white">
-				<div>Τοποθεσία Γραφείου: <a href="https://www.google.com/maps/place/Φιλοποίμενος+49,+Πάτρα+262+21" class="text-white font-weight-bold bb-1-white-hover cursor-pointer" target="_blank">Φιλοποίμενος 49, 26221, Πάτρα.</a></div>
-				<div class="mt-10px">Τηλέφωνο Επικοινωνίας: <a href="tel:6948222852" class="text-white font-weight-bold bb-1-white-hover cursor-pointer" target="_blank">6948222852</a></div>
+			<div id="footer" role="contentinfo">
+				<div class="px-100px py-50px bg-gray text-white">
+					<div>Τοποθεσία Γραφείου: <a href="https://www.google.com/maps/place/Φιλοποίμενος+49,+Πάτρα+262+21" class="text-white font-weight-bold bb-1-white-hover cursor-pointer" target="_blank">Φιλοποίμενος 49, 26221, Πάτρα.</a></div>
+					<div class="mt-10px">Τηλέφωνο Επικοινωνίας: <a href="tel:6948222852" class="text-white font-weight-bold bb-1-white-hover cursor-pointer" target="_blank">6948222852</a></div>
+				</div>
 			</div>
-			<div class="d-flex flex-center py-30px"><img src="assets/espa.jpg" class="w-400px object-fit-contain" alt="ΕΣΠΑ 2014 - 2020" /></div>
 		</div>
 	</body>
 </html>
