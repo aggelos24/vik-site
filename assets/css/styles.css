@@ -135,6 +135,14 @@ h2 {
 	margin: 5px 0;
 }
 
+.mt-50px {
+	margin-top: 50px;
+}
+
+.mt-30px {
+	margin-top: 30px;
+}
+
 .mt-20px {
 	margin-top: 20px;
 }
@@ -147,8 +155,20 @@ h2 {
 	margin-top: 5px;
 }
 
+.ml-5px {
+	margin-left: 5px;
+}
+
+.ml-10px {
+	margin-left: 10px;
+}
+
 .w-100 {
 	width: 100%;
+}
+
+.w-33 {
+	width: 33%;
 }
 
 .w-400px {
@@ -217,5 +237,27 @@ h2 {
 
 	.sidebar {
 		display: none;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.d-up-to-m-none {
+		display: none;
+	}
+
+	.px-up-to-m-50px {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+@media only screen and (min-width: 701px) {
+	.d-from-m-none {
+		display: none;
+	}
+
+	.px-from-m-100px {
+		padding-left: 100px;
+		padding-right: 100px;
 	}
 }
