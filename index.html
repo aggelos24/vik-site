@@ -345,9 +345,12 @@
 				}
 			}
 
-			makeImagesSameSize('image-same-size-1st-row');
-			makeImagesSameSize('image-same-size-2nd-row');
-			makeImagesSameSize('image-same-size-3rd-row');
+
+			setTimeout(() => {
+				makeImagesSameSize('image-same-size-1st-row');
+				makeImagesSameSize('image-same-size-2nd-row');
+				makeImagesSameSize('image-same-size-3rd-row');
+			}, 3000);
 		</script>
 	</body>
 </html>
