@@ -1,4 +1,6 @@
 <?php
+include 'simpleMail.php';
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$name    = stripslashes(trim($_POST['name']));
 	$email   = stripslashes(trim($_POST['email']));
@@ -12,8 +14,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 	$to = 'contact@vasilopoulouvicky.gr';
 
-	$subject = "Μήνυμα από {$name}";
-	
+	$mail = new SimpleMail();
+
+	$mail->setTo('contact@vasilopoulouvicky.gr');
+	$mail->setFrom('contact@vasilopoulouvicky.gr');
+	$mail->setSender($name);
+	$mail->setSenderEmail($email);
+	$mail->setSubject("Μήνυμα από {$name}");
+
 	$body = "
 	<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">
 	<html>
@@ -27,17 +35,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			<p><strong>Μήνυμα:</strong> {$message}</p>
 		</body>
 	</html>";
-	
-	// To send HTML mail, the Content-type header must be set
-	$headers[] = 'MIME-Version: 1.0';
-	$headers[] = 'Content-type: text/html; charset=iso-8859-1';
-	
-	// Additional headers
-	$headers[] = 'To: contact@vasilopoulouvicky.gr';
-	$headers[] = 'From: contact@vasilopoulouvicky.gr';
-	
-	// send mail
-	mail($to, $subject, $body, implode("\r\n", $headers));
+
+	$mail->setHtml($body);
+	$mail->send();
 
 	echo 'Success';
 ?>
