@@ -1,7 +1,5 @@
 <?php
 
-namespace SimpleMail;
-
 /**
  * Powerful Class to send emails with PHP.
  *

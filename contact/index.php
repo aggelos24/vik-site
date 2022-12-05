@@ -1,5 +1,5 @@
 <?php
-include './simpleMail.php';
+include 'simpleMail.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$name    = stripslashes(trim($_POST['name']));
