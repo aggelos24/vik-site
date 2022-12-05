@@ -12,8 +12,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die("Header injection detected");
     }
 
-	$to = 'contact@vasilopoulouvicky.gr';
-
 	$mail = new SimpleMail();
 
 	$mail->setTo('contact@vasilopoulouvicky.gr');
