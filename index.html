@@ -216,7 +216,7 @@
 				</div>
 
 
-				<div id="services" class="px-up-to-m-50px px-from-m-100px py-50px">
+				<div id="services" class="px-up-to-m-50px px-from-m-100px py-50px bb-2-gray">
 					<!-- Desktop -->
 					<div class="d-up-to-m-none">
 						<div class="d-flex">
@@ -322,6 +322,55 @@
 			</div>
 
 
+			<div id="contact" class="px-up-to-m-50px px-from-m-100px py-50px">
+				<div class="d-flex">
+					<div class="w-50">
+						<form id="contact-form" onSubmit="return false">
+							<div>
+								<label>
+									Ονοματεπώνυμο *
+									<div class="mt-5px">
+										<input type="text" id="name" name="name" placeholder="Ονοματεπώνυμο" required>
+									</div>
+								</label>
+							</div>
+
+							<div class="mt-10px">
+								<label>
+									Email *
+									<div class="mt-5px">
+										<input type="email" id="email" name="email" placeholder="Email" required>
+									</div>
+								</label>
+							</div>
+
+							<div class="mt-10px">
+								<label>
+									Τηλέφωνο
+									<div class="mt-5px">
+										<input type="text" id="phone" name="phone" placeholder="Τηλέφωνο">
+									</div>
+								</label>
+							</div>
+
+							<div class="mt-10px">
+								<label>
+									ΤΟ μήνυμά σας *
+									<div class="mt-5px">
+										<textarea type="text" id="message" name="message" rows="4" placeholder="Το μήνυμα σας" required></textarea>
+									</div>
+								</label>
+							</div>
+
+							<div class="mt-10px">
+								<button class="w-100 bg-light-blue text-white fs-18px br-4px p-5px b-0" type="submit" onclick="">Αποστολή</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
 			<div id="footer" role="contentinfo">
 				<div class="px-up-to-m-50px px-from-m-100px py-50px bg-gray text-white">
 					<div class="d-flex flex-center">
@@ -349,6 +398,30 @@
 					el.style.height = max_height + 'px';
 				}
 			}
+
+
+			document.forms['contact-form'].addEventListener('submit', () => {
+				const isValid = document.forms['contact-form'].reportValidity();
+  				if (isValid) {
+					const nameValue = document.getElementById('name').value;
+					const emailValue = document.getElementById('email').value;
+					const phoneValue = document.getElementById('phone').value;
+					const messageValue = document.getElementById('message').value;
+
+					fetch('/contact', {
+						method: 'POST',
+						headers:{
+							'Content-Type': 'application/x-www-form-urlencoded'
+						},    
+						body: new URLSearchParams({
+							name: nameValue,
+							email: emailValue,
+							phone: phoneValue,
+							message: messageValue
+						})
+					});
+				}
+			}, false);
 
 
 			window.addEventListener('load', (event) => {

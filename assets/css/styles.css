@@ -18,6 +18,15 @@ a {
 	text-decoration: none;
 }
 
+input, textarea {
+	padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid #ced4da;
+}
+
 .sidebar {
 	height: 100%;
 	width: 250px;
@@ -33,6 +42,10 @@ a {
 
 .bg-white {
 	background-color: white;
+}
+
+.bg-light-blue {
+	background-color: #0d6efd;
 }
 
 .bg-gray {
@@ -93,6 +106,10 @@ h2 {
 
 .br-1-gray {
 	border-right: 1px solid #909090;
+}
+
+.b-0 {
+	border: 0;
 }
 
 .b-1-light-gray {
@@ -214,6 +231,10 @@ h2 {
 
 .w-39 {
 	width: 39%;
+}
+
+.w-50 {
+	width: 50%;
 }
 
 .w-400px {
