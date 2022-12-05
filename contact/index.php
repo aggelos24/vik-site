@@ -40,4 +40,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$mail->send();
 
 	echo 'Success';
+}
 ?>
