@@ -355,7 +355,7 @@
 
 							<div class="mt-10px">
 								<label>
-									ΤΟ μήνυμά σας *
+									Το μήνυμά σας *
 									<div class="mt-5px">
 										<textarea type="text" id="message" name="message" rows="4" placeholder="Το μήνυμα σας" required></textarea>
 									</div>
@@ -419,7 +419,8 @@
 							phone: phoneValue,
 							message: messageValue
 						})
-					});
+					})
+					.then(r => r.text());
 				}
 			}, false);
 
