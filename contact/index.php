@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$message = stripslashes(trim($_POST['message']));
     $pattern = '/[\r\n]|Content-Type:|Bcc:|Cc:/i';
 
-    if (preg_match($pattern, $name) || preg_match($pattern, $email) || preg_match($pattern, $subject)) {
+    if (preg_match($pattern, $name) || preg_match($pattern, $email)) {
         die("Header injection detected");
     }
 
