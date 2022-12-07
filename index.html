@@ -371,7 +371,7 @@
 								</div>
 
 								<div class="mt-10px">
-									<button class="w-100 bg-light-blue text-white fs-18px br-4px p-5px b-0" type="submit" onclick="">Αποστολή</button>
+									<button class="w-100 bg-light-blue text-white fs-18px br-4px p-5px b-0 cursor-pointer send-btn" type="submit">Αποστολή<span class="d-none ml-5px check"><i class="fa-solid fa-check"></i></span></button>
 								</div>
 							</form>
 						</div>
@@ -424,7 +424,7 @@
 						</div>
 
 						<div class="mt-10px">
-							<button class="w-100 bg-light-blue text-white fs-18px br-4px p-5px b-0" type="submit" onclick="">Αποστολή</button>
+							<button class="w-100 bg-light-blue text-white fs-18px br-4px p-5px b-0 cursor-pointer send-btn" type="submit">Αποστολή<span class="d-none ml-5px check"><i class="fa-solid fa-check"></i></span></button>
 						</div>
 
 						<iframe class="w-100 h-400px mt-50px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=%CE%99%CF%89%CE%AC%CE%BD%CE%BD%CE%BF%CF%85%20%CE%92%CE%BB%CE%AC%CF%87%CE%BF%CF%85%201,%20%CE%A0%CE%AC%CF%84%CF%81%CE%B1+(%CE%92%CE%B1%CF%83%CE%B9%CE%BB%CE%BF%CF%80%CE%BF%CF%8D%CE%BB%CE%BF%CF%85%20%CE%92%CF%8A%CE%BA%CF%85)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
@@ -490,7 +490,15 @@
 							message: messageValue
 						})
 					})
-					.then(r => r.text());
+					.then(r => {
+						sendBtns = document.getElementsByClassName('send-btn');
+						checks = document.getElementsByClassName('check');
+
+						sendBtns[0].classList.add('bg-green');
+						sendBtns[1].classList.add('bg-green');
+						checks[0].classList.remove('d-none');
+						checks[1].classList.remove('d-none');
+					});
 				}
 			}, false);
 
