@@ -144,10 +144,6 @@ h2 {
 	padding: 20px;
 }
 
-.p-40px {
-	padding: 40px;
-}
-
 .py-50px {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -241,12 +237,16 @@ h2 {
 	width: 50%;
 }
 
-.w-50-20px {
-	width: calc(50% - 20px);
+.w-33-40px {
+	width: calc(33% - 40px);
 }
 
-.max-w-400px {
-	max-width: 400px;
+.w-66 {
+	width: 66%;
+}
+
+.max-w-350px {
+	max-width: 350px;
 }
 
 .h-400px {
